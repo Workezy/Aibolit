@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "FuturaNewReg", sans-serif;
+  src: url("../fonts/FuturaNewHeavyReg.woff") format("woff");
+  src: url("../fonts/FuturaNewHeavyReg.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SchoolBook", sans-serif;
+  src: url("../fonts/Schoolbook.ttf") format("ttf");
+}
+body {
+  font-family: "FuturaNewReg", sans-serif;
+}
+h2 {
+  font-family: "SchoolBook", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #080606;
+}
+header {
+  font-family: "FuturaNewReg", sans-serif;
+  font-size: 20px;
+}
+.header-wrapper {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-wrapper a {
+  line-height: 20px;
+  font-weight: 700;
+  color: #c3b9b5;
+  transition: 0.3s;
+}
+.header-wrapper a:hover {
+  color: #59443f;
+}
+.navbar {
+  display: flex;
+}
+.navbar-item {
+  margin-right: 80px;
+}
+.navbar-item-dropdown:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.dropdown-content {
+  padding-top: 40px;
+  padding-left: 50px;
+  width: 300px;
+  max-height: 230px;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+  border-radius: 20px;
+  z-index: 1;
+}
+.dropdown-content a {
+  margin-bottom: 30px;
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  transition: 0.3s;
+  color: #080606;
+}
+.dropdown-content a:hover {
+  font-weight: 500;
+  text-indent: 10px;
+}
+
+.locate a {
+  display: flex;
+  align-items: center;
+  color: #ffc59e;
+}
+.locate a i {
+  margin-right: 10px;
+}
+.locate-text {
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #59443f;
+}
+.footer__inner {
+  height: 469px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logotype {
+  margin-left: -50px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 30px;
+}
+.footer-logotype--text {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title h2 {
+  font-size: 50px;
+  line-height: 46px;
+}
+.footer-subtitle {
+  font-size: 20px;
+  line-height: 20px;
+}
+.footer-title h2,
+.footer-subtitle {
+  color: #fff;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-menu-item {
+  margin-right: 100px;
+}
+.footer-menu a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.footer-download-btn {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.footer-social {
+  margin-bottom: 30px;
+}
+.footer-social--item {
+  margin-right: 50px;
+}
+.footer-social--item svg path {
+  fill: #fff;
+}
+.footer-email > div {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  /* transition: 0.5s all; */
+}
+.popup-wrapper.activePopup {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.popup-city {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+  border-radius: 20px;
+}
+.popup-city.activePopup {
+  display: flex;
+  transition: 0.5s all;
+}
+.popup-city h2 {
+  padding: 50px 123px;
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #080606;
+}
+.popup-item {
+  cursor: pointer;
+  padding-bottom: 30px;
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #080606;
+  transition: 0.3s;
+}
+.popup-item:hover {
+  color: #ffc59e;
+}
+.popup-close {
+  padding: 10px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  font-size: 20px;
+  color: #080606;
+  cursor: pointer;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.mb70 {
+  margin-bottom: 70px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.mr30 {
+  margin-right: 30px;
+}

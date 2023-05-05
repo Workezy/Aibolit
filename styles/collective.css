@@ -1,0 +1,38 @@
+header {
+  margin-bottom: 150px;
+}
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.main-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.nav-menu-area {
+  margin-top: 100px;
+}
+.nav-menu-title {
+  margin-bottom: 100px;
+  line-height: 110px;
+  font-size: 80px;
+}
+.nav-menu-area-list {
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu-area--item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #c3b9b5;
+}
+
+.collective {
+    width: 909px;
+}

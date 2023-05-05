@@ -1,0 +1,71 @@
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.main-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.nav-menu-area {
+  margin-top: 100px;
+}
+.nav-menu-title {
+  margin-bottom: 100px;
+  line-height: 110px;
+  font-size: 80px;
+}
+.nav-menu-area-list {
+  display: flex;
+  flex-direction: column;
+}
+.nav-menu-area--item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #c3b9b5;
+}
+.back-btn {
+  display: flex;
+  align-items: center;
+}
+.back-btn a {
+  padding-top: 70px;
+  margin-bottom: 55px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffc59e;
+  text-transform: uppercase;
+}
+
+.history-of-company {
+    margin-top: -15px;
+  width: 909px;
+}
+
+.history-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.history-text {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #59443f;
+}
+.history-img {
+  margin-bottom: 50px;
+  /* margin-right: 50px; */
+}
+.history-list--item {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #59443f;
+}

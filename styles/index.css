@@ -1,0 +1,768 @@
+@font-face {
+  font-family: "FuturaNewReg", sans-serif;
+  src: url("../fonts/FuturaNewHeavyReg.woff") format("woff");
+  src: url("../fonts/FuturaNewHeavyReg.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "SchoolBook", sans-serif;
+  src: url("../fonts/Schoolbook.ttf") format("ttf");
+}
+body {
+  font-family: "FuturaNewReg", sans-serif;
+}
+h2 {
+  font-family: "SchoolBook", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #080606;
+}
+header {
+  font-family: "FuturaNewReg", sans-serif;
+  font-size: 20px;
+}
+.header-wrapper {
+  max-width: 1760px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-wrapper a {
+  line-height: 20px;
+  font-weight: 700;
+  color: #c3b9b5;
+  transition: 0.3s;
+}
+.header-wrapper a:hover {
+  color: #59443f;
+}
+.navbar {
+  display: flex;
+}
+.navbar-item {
+  margin-right: 80px;
+}
+.navbar-item-dropdown:hover .dropdown {
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.dropdown-content {
+  padding-top: 40px;
+  padding-left: 50px;
+  width: 300px;
+  max-height: 230px;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+  border-radius: 20px;
+  z-index: 1;
+}
+.dropdown-content a {
+  margin-bottom: 30px;
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  transition: 0.3s;
+  color: #080606;
+}
+.dropdown-content a:hover {
+  font-weight: 500;
+  text-indent: 10px;
+}
+
+.locate a {
+  display: flex;
+  align-items: center;
+  color: #ffc59e;
+}
+.locate a i {
+  margin-right: 10px;
+}
+.locate-text {
+  text-transform: uppercase;
+}
+.slider-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.slider {
+  position: relative;
+  margin-top: 170px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.slider-pagination {
+  margin-left: 120px;
+}
+.slider-pagination li {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-bottom: 70px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.slider-pagination li {
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #c3b9b5;
+
+  transition: 0.3s;
+}
+.slider-pagination li:hover {
+  color: #59443f;
+}
+.pagination-active {
+  border: 2px solid #080606;
+}
+.slider-slide {
+  display: none;
+  flex-direction: row;
+}
+.slider-slide.active {
+  display: flex;
+}
+.slider-slide-leftbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.slider-slide-leftbox h2 {
+  /* margin-bottom: 50px; */
+
+  font-family: "SchoolBook";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 110px;
+  color: #080606;
+}
+
+.slider-btn {
+  margin-bottom: 50px;
+  width: 284px;
+  height: 67px;
+  text-align: center;
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 67px;
+  color: #ffffff;
+
+  background: #ffc59e;
+  box-shadow: 0px 4px 20px #ffc59e;
+  border-radius: 33px;
+
+  transition: 0.3s;
+}
+.slider-btn:hover {
+  background: #59443f;
+  box-shadow: none;
+}
+.slider-social--item {
+  margin-right: 50px;
+}
+.slider-social--item path {
+  transition: 0.3s;
+}
+.slider-social--item:hover path {
+  fill: #59443f;
+}
+
+.phone a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 80px;
+  margin-right: 80px;
+
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #59443f;
+}
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+}
+.services {
+  margin-bottom: 150px;
+}
+.services-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.services-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  width: 320px;
+  height: 220px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #fffefe;
+  border-radius: 20px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+.services-card-title {
+  margin-top: 24px;
+  margin-left: 24px;
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #59443f;
+}
+.services-card-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+.services-card-count {
+  margin-bottom: 24px;
+  margin-left: 24px;
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #59443f;
+}
+.services-card svg path {
+  transition: 0.3s;
+}
+.services-card:hover {
+  border: 1px solid #c3b9b5;
+}
+.services-card:hover path {
+  fill: #59443f;
+}
+
+.about-us {
+  background: #fbf8f8;
+}
+.about-us__inner {
+  padding-top: 180px;
+  padding-bottom: 205px;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us--title {
+  margin-bottom: 50px;
+
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #080606;
+}
+.about-us-desc {
+  margin-bottom: 40px;
+  max-width: 479px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443f;
+}
+.title-btn {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+}
+.title-btn a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffc59e;
+}
+.title-btn span {
+  margin-left: 10px;
+}
+.arrow {
+  padding: 2px 4px;
+}
+.right {
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.about-us-slider {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about-us-slider-navigation {
+  display: flex;
+  align-items: center;
+}
+.slider-arrow-next {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+}
+.slider-arrow-prev {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+}
+.slider-arrow-next svg g path,
+.slider-arrow-prev svg g path {
+  transition: 0.3s;
+}
+.slider-arrow-next:hover svg g path,
+.slider-arrow-prev:hover svg g path {
+  fill: #59443f;
+}
+.about-us-slider-slide {
+  margin-right: 15px;
+}
+.about-us-slider-btn {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-us-slider-btn a {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffc59e;
+}
+.about-us-slider-btn span {
+  margin-left: 10px;
+}
+
+.about-help__inner {
+  position: relative;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-help__inner h2 {
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 110px;
+
+  color: #59443f;
+}
+.about-help__inner div {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 110px;
+
+  color: #080606;
+}
+.bird {
+  position: absolute;
+  z-index: -1;
+  right: 20%;
+  bottom: 17%;
+}
+
+.about-services {
+  margin-top: 150px;
+  height: 1080px;
+  margin-bottom: 309px;
+}
+.wrapper {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+.about-services-title {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.about-services--items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-services--item {
+  margin-right: 60px;
+  margin-bottom: 130px;
+  width: 484px;
+  height: 230px;
+}
+.about-services--item_title {
+  font-family: "SchoolBook";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #080606;
+}
+.about-services--item_desc {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 130px;
+}
+.about-services--item_desc__img {
+  margin-right: 30px;
+}
+.about-services--item_desc__text {
+  margin-top: 35px;
+  width: 318px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #59443f;
+}
+
+.mobile-app {
+  background: #ffc59e;
+  height: 1080px;
+}
+.mobile-leftbox {
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("../img/mobile.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 30%;
+}
+.mobile-pre-title {
+  font-size: 30px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.mobile-title h2 {
+  font-size: 80px;
+  line-height: 110px;
+  color: #ffffff;
+}
+.mobile-download {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  height: 1080px;
+}
+.contacts__inner {
+  height: 1080px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-title > h2 {
+  margin-bottom: 70px;
+}
+.first-contacts-addres {
+  margin-bottom: 50px;
+}
+.first-contacts-addres,
+.second-contacts-addres {
+  display: flex;
+  flex-direction: column;
+}
+.first-contacts-addres h2,
+.second-contacts-addres h2 {
+  margin-bottom: 20px;
+  margin-right: 26px;
+  font-size: 30px;
+}
+.first-contacts-addres_item,
+.second-contacts-addres_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #59443f;
+}
+.first-contacts-addres_item i,
+.second-contacts-addres_item i {
+  margin-right: 30px;
+  font-size: 25px;
+}
+i {
+  color: #ffc59e;
+}
+
+.footer {
+  background-color: #59443f;
+}
+.footer__inner {
+  height: 469px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logotype {
+  margin-left: -50px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  margin-right: 30px;
+}
+.footer-logotype--text {
+  display: flex;
+  flex-direction: column;
+}
+.footer-title h2 {
+  font-size: 50px;
+  line-height: 46px;
+}
+.footer-subtitle {
+  font-size: 20px;
+  line-height: 20px;
+}
+.footer-title h2,
+.footer-subtitle {
+  color: #fff;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-menu-item {
+  margin-right: 100px;
+}
+.footer-menu a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+.footer-download-btn {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+.footer-social {
+  margin-bottom: 30px;
+}
+.footer-social--item {
+  margin-right: 50px;
+}
+.footer-social--item svg path {
+  fill: #fff;
+}
+.footer-email > div {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.popup-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  /* transition: 0.5s all; */
+}
+.popup-wrapper.activePopup {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.popup-city {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+  border-radius: 20px;
+}
+.popup-city.activePopup {
+  display: flex;
+  transition: 0.5s all;
+}
+.popup-city h2 {
+  padding: 50px 123px;
+  font-family: "SchoolBook";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #080606;
+}
+.popup-item {
+  cursor: pointer;
+  padding-bottom: 30px;
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #080606;
+  transition: 0.3s;
+}
+.popup-item:hover {
+  color: #ffc59e;
+}
+.popup-close {
+  padding: 10px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  font-size: 20px;
+  color: #080606;
+  cursor: pointer;
+}
+
+.popup-phoneAuth {
+  position: relative;
+  display: none;
+  background: #ffffff;
+  box-shadow: 2px 2px 20px rgba(155, 82, 50, 0.1);
+  border-radius: 20px;
+  z-index: 1;
+}
+.popup-phoneAuth.activePopup {
+  display: block;
+  transition: 0.5s all;
+}
+.popup-phoneAuth form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.phone__input {
+  display: none;
+  padding: 16px;
+  margin: 32px 0;
+  width: 344px;
+  height: 57px;
+  background: #ffffff;
+  border: 1px solid #ede9e8;
+  border-radius: 20px;
+}
+.phone__input.active {
+  display: block;
+}
+.popup-phoneAuth form input::placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  /* padding: 16px; */
+  color: #59443f;
+}
+.popup-phoneAuth form button {
+  margin: 32px 0;
+  width: 284px;
+  height: 67px;
+  background: #ede9e8;
+  border-radius: 33px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: default;
+  color: #ffffff;
+}
+
+.popup-phoneAuth form a {
+  margin-bottom: 73px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffc59e;
+}
+.popup-phoneAuth h2 {
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 109px;
+}
+.btn-services.active {
+  transition: 0.3s all;
+  cursor: pointer;
+  background: #ffc59e;
+  box-shadow: 0px 4px 20px #ffc59e;
+  border-radius: 33px;
+}
+.phone__auth {
+  display: none;
+  margin: 32px 0;
+}
+.phone__auth.active {
+  display: block;
+}
+.phone__auth-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone__auth--item {
+  padding-left: 20px;
+  margin-right: 27px;
+  width: 50px;
+  height: 57px;
+  border: 1px solid #ede9e8;
+  border-radius: 20px;
+}
+.auth__timer {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #c3b9b5;
+}
